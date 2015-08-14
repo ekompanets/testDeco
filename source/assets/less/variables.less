@@ -1,0 +1,86 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             #f5f5f5; // 
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         #a70c5d 	  ; // #337ab7
+@brand-success:         #fed639;
+@brand-info:            #458d01;
+@brand-warning:         spin(@brand-primary,120);
+@brand-danger:          spin(@brand-primary,60);
+@brand-contrast:        spin(@brand-primary,180);
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #fff;
+//** Border-color
+@border-color:          darken(@brand-primary,3%);
+//** Global text color on `<body>`.
+@text-color:            #7e7e7e; //@gray-dark;
+
+//** Global textual link color.
+@link-color:            @brand-primary;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+//** Link hover decoration.
+@link-hover-decoration: underline;
+//** Shadow color
+@shadow-color: 			#ccc;
+
+@opacity-link:			.8;
+@opacity-hover:			1;
+
+
+//== Typography
+//
+
+
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-base:        "GothamProRegular";
+
+@font-size-base:          15px;
+@font-size-large:         17px; // ~18px
+@font-size-small:         13px; // ~12px
+
+@font-size-h1:            48px; // ~36px
+@font-size-h2:            30px; // ~30px
+@font-size-h3:            28px; // ~24px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.2; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    normal;
+@headings-line-height:    1.5;
+@headings-color:          inherit;
+
+
+
+//== Media queries breakpoints
+@screen-phone: 480px;
+@screen-tablet: 768px;
+@screen-desktop: 1200px;
+ 
+//== Scaffoldings sizes
+@min-width: 320px;
+@max-width: 1600px;
+

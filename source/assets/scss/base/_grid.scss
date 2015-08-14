@@ -1,0 +1,11 @@
+//	Grid
+
+.grid-row {
+	@extend %table;
+}
+
+.grid-3,
+.grid-32 {
+	@extend %ibt;
+}
+

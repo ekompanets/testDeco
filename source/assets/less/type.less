@@ -1,0 +1,54 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @headings-font-family;
+  font-weight: @headings-font-weight;
+  line-height: @headings-line-height;
+  color: @headings-color;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin: 0;
+
+}
+
+h1, .h1 { font-size: @font-size-h1; }
+h2, .h2 { font-size: @font-size-h2; }
+h3, .h3 { font-size: @font-size-h3; }
+
+p {
+  margin: 0;
+}
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+dl,
+dd{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: @screen-tablet) {
+  h1, .h1 { font-size: @font-size-h1*.75; }
+  h2, .h2 { font-size: @font-size-h2*.75; }
+  h3, .h3 { font-size: @font-size-h3*.75; }
+  h1, .h1,
+  h2, .h2,
+  h3, .h3 {
+    line-height: @headings-line-height*.75;
+
+}
+}

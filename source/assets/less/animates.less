@@ -1,0 +1,71 @@
+.animated {
+  animation-duration: .5s;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animation__slideInDown {
+  animation-name: slideInDown;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes scaleInUp {
+  0% {
+    opacity: 0;
+    transform: scale(1, 0);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes scaleInUp {
+  0% {
+    opacity: 0;
+    transform-origin: bottom;
+    transform: scale(1, 0);
+  }
+
+  100% {
+    transform-origin: bottom;
+    transform: scale(1, 1);
+  }
+}
+
+.animation__scaleInUp {
+  animation-name: scaleInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  // transition: height 500ms cubic-bezier(.39,.575,.565,1);
+  // will-change: height;
+}
+
+.animation__pulse:hover {
+  transform: translate3d(0,0,0) scale(1.2) ;  
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}

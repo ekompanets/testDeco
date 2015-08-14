@@ -1,0 +1,46 @@
+/*!
+ * -------------------------------------
+ * Theme Name: ______
+ * Theme URI: http://decollete.com.ua/
+ * Author: Decollete Team
+ * Author URI: http://decollete.com.ua/
+ * Description: Custom wp theme special for _____
+ * Version: 1.0
+ * -------------------------------------
+ */
+
+
+//	Compass Start
+@import "compass/css3";
+@import "compass";
+@import "compass/layout";
+@import "compass/css3/user-interface";
+
+
+
+// Base Style
+@import "base/_mixin";		// миксины
+@import "base/_fonts";		// шрифты
+@import "base/_variables";	// переменные
+@import "base/extend";		// расширения
+@import "base/_function";	// функции
+@import "base/_sprite";		// спрайт
+@import "base/_reset";		//
+@import "base/_grid";		// сетка
+
+
+//	Style
+@import "btnsIcons";	    // кнопки, иконки
+@import "some";			    // стили основные-всякие
+@import "header";		    // стили шапки
+@import "footer";		    // стили футера
+@import "sidebar";		    // стили виджетов сайдбара
+@import "excerpt";			// post excerpts
+@import "post";				// стили поста
+
+@import "adaptive";			// стили адаптивки
+
+
+
+
+
