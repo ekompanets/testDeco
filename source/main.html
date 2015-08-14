@@ -46,62 +46,131 @@
   <!-- main -->
   <main class="page">
     <div class="row row-services">
-      <h2 class="row row-title">
+      <h2 class="row-title">
         Услуги и цены
       </h2>
       <p class="row-descr">
         Pravo agency выполняет роль юристов-аутсорсеров, надежно прикрывая правовой тыл вашей деятельности.
       </p>  
-      <div class="row-services-item">
-        <h3 class="row-services-title"></h3>
-        <p class="row-services-list-descr"></p>
-        <ul class="row-services-list">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <button></button>
+      <div class="row-items">
+        <div class="services-item">
+          <h3 class="services-title">Наведение порядка в делах</h3>
+          <p class="services-text">Аудит документов и платежей на предмет:</p>
+          <ul class="services-list">
+            <li>соблюдения необходимых формальностей и gроцедур,</li>
+            <li>наличия всех оригиналов договоров, актов,</li>
+            <li>легализация зависших платежей.</li>
+          </ul>
+          <button>i</button>
+        </div>
+        
+        <div class="services-item">
+          <h3 class="services-title">Оптимизация договорных отношений</h3>
+          <ul class="services-list">
+            <li>Доработка, латание дыр и улучшение условий основных типовых договоров вашей компании</li>
+            <li>Оформление сотрудников на оптимальных условиях ведения деятельности и налогообложения</li>
+            <li>Составление договоров, соглашений о конфиденциальности, публичных офферт</li>
+          </ul>
+          <button><i></i></button>
+        </div>
+        
+        <div class="services-item">
+          <h3 class="services-title">Правовое сопровождение деятельности (юрист-аутсорсер)</h3>
+          <ul class="services-list">
+            <li>Участие в заключении договоров: минимизация рисков, усиление ваших позиций</li>
+            <li>Юридическая консультация</li>
+            <li>Дайджест предпринимательских ИТ-новостей с разъяснениями</li>
+            <li>Представительство интересов в судах</li>
+          </ul>
+          <button>i</button>
+        </div>
+        
+        <div class="services-item">
+          <h3 class="services-title">Разработка договоров и другой документации</h3>
+          <p class="services-text">К сожалению, конфликты бывают в любой сфере. Если дело близится к суду или уже дошло до него, мы поможем отстоять ваши права и интересы.</p>
+          <button class="btn btn-blue">i</button>
+        </div>
       </div>
 
-      <div class="row-services-item">
-        <h3 class="row-services-title"></h3>
-        <p class="row-services-list-descr"></p>
-        <ul class="row-services-list">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <button></button>
-      </div>
+    </div>
 
-      <div class="row-services-item">
-        <h3 class="row-services-title"></h3>
-        <p class="row-services-list-descr"></p>
-        <ul class="row-services-list">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <button></button>
-      </div>
+    <div class="row row-review">
+      <h2 class="row-title">
+        Отзывы
+      </h2>
+      <p class="row-descr">
+        Мнение наших клиентов <strong>делает мир и нас лучше</strong> :)
+      </p>
+      <div class="row-items">
+        <div class="review-item">
+          <p class="review-text">Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем, — это всего лишь попытки найти счастье.</p>
+          <span class="review-name">Алексей Федоров</span>
+          <span class="review-post">ceo</span>
+          <a href="" class="review-company">deco.agency</a>
+        </div>  
 
-      <div class="row-services-item">
-        <h3 class="row-services-title"></h3>
-        <p class="row-services-list-descr"></p>
-        <ul class="row-services-list">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <button></button>
-      </div>
+        <div class="review-item">
+          <p class="review-text">Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем, — это всего лишь попытки найти счастье.</p>
+          <span class="review-name">Артур Оруджалиев</span>
+          <span class="review-post">ceo</span>
+          <a href="ain.ua" class="review-company">AIN.ua</a>
+        </div> 
 
+        <div class="review-item">
+          <div class="review-video">
+            <video src="" poster="assets/img/photo-gmalenko.jpg"></video>
+          </div>
+          <span class="review-name">Григорий Маленко</span>
+          <span class="review-post">ceo</span>
+          <a href="SERM.ua" class="review-company">SERM.ua</a>
+        </div> 
+      </div>
+      <button>Загрузить еще</button>
+    </div>
+
+    <div class="row row-request">
+      <h2 class="row-title">
+        Запрос на услуги
+      </h2>
+      <form class="request-form" action="#" method="post" enctype="multipart/form-data">
+        <div class="form-block">
+          <fieldset class="input-set">
+            <input class="request-input" type="text" name="name" placeholder="ФИО*" required>
+            <input class="request-input" type="tel" name="phone" placeholder="ТЕЛЕФОН*" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+            <input class="request-input" type="email" name="mail" placeholder="E-MAIL*" required>
+            <input class="request-input" type="url" name="url" placeholder="САЙТ*" required>
+          </fieldset>
+          <fieldset class="check-set">
+            <legend class="check-set-legend">Меня интересует</legend>
+            <input class="request-check" id="check1" type="checkbox" name="check1" checked>
+            <label class="request-label-check" for="check1"></label>
+            <input class="request-check" id="check2" type="checkbox" name="check2" checked>
+            <label class="request-label-check" for="check2"></label>
+            <input class="request-check" id="check3" type="checkbox" name="check3" checked>
+            <label class="request-label-check" for="check3"></label>
+            <input class="request-check" id="check4" type="checkbox" name="check4" checked>
+            <label class="request-label-check" for="check4"></label>
+          </fieldset>
+        </div>
+        <div class="form-block">
+          <span class="">Дополнительная информация</span>
+          <textarea>Введите текст</textarea>
+        </div>
+        <button>Отправить</button>
+      </form>
     </div>
   </main>
   <!-- end of main -->
   <!-- footer -->
   <footer class="footer">
-    
+    <div class="contact-adress">
+      <p><strong>pravo agency:</strong></p>
+      <p>01001, Киев, ул.Костёльная 9, оф.8</p>
+      <p>+380 (67) 324 10 10</p>
+      <a href="#" class="">hello@pravo.agency</a>
+    </div> 
+    <div class="footer__copyright">© 2015, <strong>Pravo agency</strong></div>                   
+
   </footer>
   <!-- end of footer -->
 
