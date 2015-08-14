@@ -5,11 +5,13 @@
 
 .header {
   min-width: @min-width;
-  min-height: 124px;
-  padding-top: 25px;
-  text-transform: uppercase; 
+  text-transform: none; 
   font-size: 0; 
   background-color: @gray-light;
+  min-height: 670px;
+  background-image: url("assets/img/photo-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media (max-width: @screen-desktop) and (min-width: @screen-tablet+1) {
     padding: 0;
@@ -21,15 +23,13 @@
   @media (max-width: @screen-tablet) {
     padding-top: 1px;
   }
+  
+  .center-wrapper {
+  }
 
   &-container{
-
-    display: flex;
-    justify-content: space-between;
-
-    @media (max-width: @screen-tablet) {
-      flex-direction: column;
-    }
+    padding-left: 80px;
+    padding-right: 20px;
 
   }
 }
@@ -41,15 +41,24 @@
   z-index: 1;
 
   @media (max-width: @screen-tablet) {
-      display: none;
-      // position: absolute;
-      // top: 60px
+    display: none;
+    // position: absolute;
+    // top: 60px
 
+  }
+  
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    @media (max-width: @screen-tablet) {
+      flex-direction: column;
     }
+
+  }
 
   &-list {
     list-style: none;
-    padding-top: 20px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +105,7 @@
     padding: 20px 14px; 
     line-height: 1;
     font-size: @font-size-small;
-    letter-spacing: 1.5px;
+    text-transform: uppercase;
 
     &:hover{
       color: @brand-info;
