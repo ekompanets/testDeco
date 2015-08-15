@@ -1,0 +1,149 @@
+.row {
+  text-align: center;
+  border-bottom: 2px solid @gray-lighter;
+  
+  &-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &-title {
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 40px;
+      height: 2px;
+      bottom: -15px;
+      left: 50%;
+      margin-left: -20px;
+      background-color: @brand-primary;
+    }
+  }
+
+  &-descr {
+    display: inline-block;
+    width: 600px;
+  }
+
+
+  &-items {    
+    font-size: 0;
+  }
+
+  &-services-block {
+    padding-top: 60px;
+    padding-bottom: 25px;
+    text-align: left;
+
+    &:not(:last-of-type) {      
+      border-top: 2px solid @gray-lighter;
+      border-bottom: 2px dotted @gray-lighter;
+    }   
+  }
+
+  &-item {
+    position: relative;
+    display: inline-block;
+    padding-left: 190px;
+    padding-right: 70px;
+    vertical-align: top;
+  }
+
+  &-item--services {    
+    width: 50%;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 42px;
+      height: 42px;
+      left: 120px;
+      top: 0;
+    }
+
+    .btn--round {
+      position: absolute;
+      top: 10px;
+      right: 70px;
+    }
+  }
+
+  &-item--service1 {
+    
+    &:before { 
+      background: url("assets/img/doc.png") no-repeat;
+    }
+  }
+
+  &-item--service2 {
+    
+    &:before { 
+      background: url("assets/img/optim.png") no-repeat;
+    }
+  }
+
+  &-item--service3 {
+    
+    &:before { 
+      background: url("assets/img/sostav.png") no-repeat;
+    }
+  }
+
+  &-item--service4 {
+    
+    &:before { 
+      background: url("assets/img/sud.png") no-repeat;
+    }
+  }
+
+  &-item-title {
+    font-weight: 700;
+    line-height: 1.3em;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &-item-text  {
+    font-size: @font-size-small;
+    line-height: 1.5em;
+  }
+
+  &-item-list {
+    font-size: @font-size-small;
+    line-height: 1.5em;
+
+    li {
+      position: relative;
+      padding-left: 25px;
+
+      &:before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 6px;
+        height: 6px;
+        border: 2px solid @brand-primary;
+        border-radius: 50%;
+        top: 0.75em;
+        left: 0;
+        margin-top: -3px;
+
+      }
+      
+    }
+  }
+}
+
+.review {
+  position: relative;
+  display: inline-block;
+  width: 33.3%;
+  padding-top: 65px;
+  font-size: @font-size-large;
+  line-height: 1.47em;
+}

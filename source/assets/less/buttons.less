@@ -10,30 +10,68 @@
   text-align: center;
   color: @text-color;
   transition: .4s;
-  border: 2px solid @border-color;  
+  border: 2px solid @brand-primary;  
 
   &:hover {
     color: @body-bg;
-    background: @border-color;
+    background: @brand-primary;
   }
 
+  &--round {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  &--img {
+    position: relative;
+    padding-left: 25px;
+    border: none;
+    text-transform: uppercase;
+
+    font-size: 11px;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 23px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      background: url("assets/img/download.png");
+          transition: all .5s
+    }
+
+    &:hover {
+      color: @text-color;
+      background: @body-bg;
+    }
+
+    &:hover:before {
+      transform: rotate(360deg);
+    }
+
+
+
+  }
+
+
+  &--social { 
+    .hidden-text();
+    border: 1px solid #ddd;
+    display: inline-block;     
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0 10px;
+    border-radius: 50%;
+    vertical-align: bottom;
+    text-align: center;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: contain;
+
+  }
 }
-
-.btn--social { 
-  .hidden-text();
-  border: 1px solid #ddd;
-  display: inline-block;     
-  width: 30px !important;
-  height: 30px !important;
-  margin: 0 10px;
-  border-radius: 50%;
-  vertical-align: bottom;
-  text-align: center;
-  font: 0/0 serif;
-  text-shadow: none;
-  color: transparent;
-  background-size: contain;
-
-}
-
 
